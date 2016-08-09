@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent); //遷移開始(データ投げる)
             }
         });
+
         Button testButton = (Button) findViewById(R.id.send_button2);
         testButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     Toast.makeText(getApplication(), "チェックが付いた", Toast.LENGTH_LONG).show();//表示
+
                 } else {
                     Toast.makeText(getApplication(), "チェックが外れた", Toast.LENGTH_LONG).show();
                 }
